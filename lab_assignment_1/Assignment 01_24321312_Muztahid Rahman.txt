@@ -1,0 +1,187 @@
+
+//Task 10
+public class Task10 {
+    public static void main(String[] args) {
+        int hungry; //valid
+        int 2AB; //invalid beacause it starts with a number
+        int 312.2; //invalid because variable name cannot be a number
+        int MOBILE; //valid
+        int "Ans"; //invalid because variable name cannot be in quotation 
+        int $30; //valid
+        int yes/no; //invalid because variable name cannot have a slash
+        int student-id; //invalid because variable name cannot have a hyphen
+        int A+3; //invalid because variable name cannot have a plus sign
+        int 'X'; //invalid because variable name cannot be in single quotes
+        int return; //invalid because return is a reserved keyword
+
+    }
+}
+
+//Task 11
+public class Task11 {
+    public static void main(String[] args) {
+        //2.1
+        int a = 10;
+        System.out.println(a);
+        
+        //2.2
+        int b = 20;
+        int add = a + b;
+        System.out.println(add);
+
+        //2.3
+        int prod = a*b;
+        System.out.println(prod);
+        int div = b/a;
+        System.out.println(div);
+
+        //2.4
+        double c = 9.5;
+        System.out.println(a);
+
+        double d = 19.5;
+        double add_double = c + d;
+        System.out.println(add_double);
+        double prod_double = c*d;
+        System.out.println(prod_double);
+        double div_double = d/c;
+        System.out.println(div_double);
+
+
+        //2.5
+        String a_str = "10";
+        System.out.println(a_str);
+        String b_str = "20";
+        String add_str = a_str + b_str;
+        System.out.println(add_str); //it will concat the string. for example:  1020
+        //if we try to add integer with string then
+        System.out.println(10+"20"); //it will also concat the string. for example:  1020
+        System.out.println("10"+20); //it will also concat the string. for example:  1020
+    }
+}
+
+
+//Task 12
+public class Task12 {
+    public static void main(String[] args) {
+        int radius = 4;
+        double circum = 2*Math.PI*radius;
+        System.out.println("Circumference "+circum);
+        double area = Math.PI*radius*radius;
+        System.out.println("Area "+area);
+    }
+}
+
+//Task 13
+public class Task13 {
+    public static void main(String[] args) {
+        int num = 123456;
+        int last2 = num % 100;
+        System.out.println(last2);
+    }
+}
+
+
+//Task14
+public class Task14 {
+    public static void main(String[] args) {
+        int inches = 1000;
+        double meters = inches*0.0254;
+        System.out.println(inches+" inch is "+meters+" meters");
+    }
+}
+
+
+//Task 15
+public class Task15 {
+    public static void main(String[] args) {
+        //a
+        int a = 10;
+        int b = 20;
+        int temp;
+        temp = a;
+        a = b;
+        b = temp;
+        System.out.println("a is now "+a);
+        System.out.println("b is now "+b);
+
+        //b
+        int c = 10;
+        int d = 20;
+        c = c+d;
+        d = c-d;
+        c = c-d;
+        System.out.println("c is now "+c);
+        System.out.println("d is now "+d);
+
+    }
+}
+
+
+//Task 16
+public class Task16 {
+    public static void main(String[] args) {
+        int minutes = 3456789;
+        int years = minutes / (60*24*365);
+        int days = (minutes % (60*24*365)) / (60*24);
+        System.out.println(minutes+" minutes is approximately "+years+" years and "+days+" days");
+    }
+}
+
+
+//Task 17
+public class Task17 {
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 5;
+        int c = 8;
+        int d = ((2*b)*((c-a)/3))+7;
+        System.out.println(d);
+    }
+}
+
+
+//Task 18
+public class Task18 {
+    public static void main(String[] args) {
+        int student_id = 24321312;
+        int last1 = student_id % 10;
+        int last2 = (student_id / 10) % 10;
+        System.out.println(last1);
+        System.out.println(last2);
+    }
+}
+
+
+//Task 19
+public class Task19 {
+    public static void main(String[] args) {
+        double a = 8;
+        double b = 3;
+        double half_a= a/2;
+        double one_side = Math.sqrt(Math.pow(half_a, 2)+Math.pow(b, 2));
+        double area = ((3*Math.sqrt(3)/2)*Math.pow(one_side, 2));
+        double circum = 6*one_side;
+        System.out.println("Area "+area);
+        System.out.println("Circumference "+circum);
+    }
+}
+
+
+//Task 20
+public class Task20 {
+    public static void main(String[] args) {
+        double a = 4.5;
+        double b = 9.5;
+        double c = Math.sqrt(Math.pow(a, 2)+Math.pow(b, 2));
+
+        double sinA = a/c;
+        System.out.println(sinA);
+        double cosA = b/c;
+        System.out.println(cosA);
+        double sinB = b/c;
+        System.out.println(sinB);
+        double cosB = a/c;
+        System.out.println(cosB);
+    }
+}
